@@ -1,3 +1,134 @@
-.box1 {
-    color: black;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Inheritance for body's font */
+body {
+    font: normal 14px/25px 'serif';
+}
+
+header {
+    
+}
+
+header .header-top {
+    width: 1201px;
+    margin: 0 auto;
+    /* clear float */
+    overflow: hidden;
+}
+
+header .header-top .logo {
+    padding-top: 27px;
+    width: 221px;
+    height: 63px;
+    float: left;
+}
+
+header .header-top .logo h1 {
+    width: 221px;
+    height: 63px;
+}
+
+header .header-top .tool {
+    width: 266px;
+    height: 77px;
+    float: right;
+    padding-top: 22px;
+}
+header .header-top .tool .r1 {
+    margin-bottom: 14px;
+}
+header .header-top .tool .r1 .tel {
+    width: 32px;
+    height: 25px;
+}
+header .header-top .tool .r1 .telnumber {
+    font-size: 20px;
+    color: #00978E;
+    display: inline-block;
+    width: 120px;
+    height: 26px;
+    text-align: center;
+    margin-right: 24px;
+}
+header .header-top .tool .r1 .icon {
+    width: 24px;
+    height: 24px;
+}
+
+header .header-top .tool .r1 .chinese_icon {
+    margin-right: 15px;
+}
+
+header .header-top .tool .r2 {
+    width: 264px;
+    height: 28px;
+    border: 1px solid rgba(226, 215, 215, 0.6);
+    /* border-radius: ; */
+}
+header .header-top .tool .r2 input {
+    float: left;
+    width: 224px;
+    height: 28px;
+    border: none;
+    padding-left: 20px;
+    outline:none;
+}
+header .header-top .tool .r2 button {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+
+/* Nav Bar Section */
+
+header .main-nav {
+    height: 60px;
+    background-color: #00978E;
+    margin-top: 20px;
+}
+
+header .main-nav ul {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+header .main-nav ul li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    /* let line height = heiggt of the box */
+    line-height: 60px;
+}
+header .main-nav ul li.cur {
+    background-color: #015E58;
+}
+header .main-nav ul li a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    color: white;
+}
+header .main-nav ul li a:hover {
+    background-color: orange;
+}
+
