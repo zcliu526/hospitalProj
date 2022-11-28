@@ -54,7 +54,7 @@
             line-height: 40px;
             position: relative;
             left:50%;
-            margin-left: -16%;
+            margin-left: -69px;
         }
 
         img{
@@ -65,7 +65,20 @@
         .left-float {
             float: left;
         }
-
+        .lef-tri, .right-tri {
+            position: relative;
+        }
+        .lef-tri::before {
+            content: "";
+            width:0;
+            height: 0;
+            border: 20px solid transparent;
+            border-right-color: red;
+            left: -40px;
+            position:absolute;
+            top: 50%;
+            margin-top: -20px;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +86,7 @@
         <div class="img1 w25 left-float">
             <img src="images/b1.jpg" alt="">
         </div>
-        <div class="text1 w25 text-style left-float">
+        <div class="text1 w25 text-style left-float lef-tri">
             <p class="title">Libray</p>
             <p class="para1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             <p class="para2">Lorem Ipsum is simply dummy text of the printing and typesetting industry,
@@ -85,7 +98,7 @@
         <div class="img2 w25 left-float">
             <img src="images/b2.jpg" alt="">
         </div>
-        <div class="text2 w25 text-style left-float">
+        <div class="text2 w25 text-style left-float lef-tri">
             <p class="title">Libray</p>
             <p class="para1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             <p class="para2">Lorem Ipsum is simply dummy text of the printing and typesetting industry,
@@ -94,7 +107,7 @@
             <a href="">EXPLORE</a>
         </div>
 
-        <div class="text3 w25 text-style left-float">
+        <div class="text3 w25 text-style left-float right-tri">
             <p class="title">Libray</p>
             <p class="para1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             <p class="para2">Lorem Ipsum is simply dummy text of the printing and typesetting industry,
@@ -107,7 +120,7 @@
         </div>
 
         
-        <div class="text4 w25 text-style left-float">
+        <div class="text4 w25 text-style left-float right-tri">
             <p class="title">Libray</p>
             <p class="para1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             <p class="para2">Lorem Ipsum is simply dummy text of the printing and typesetting industry,
